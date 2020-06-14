@@ -1,9 +1,17 @@
-// Add your doToElementsInArray() function here:
-function doToElementsInArray(array, callback) {
-  array.forEach(callback);
+function iterativeLog(array) {
+  array.forEach((el, i) => {
+    console.log(`${i}: ${el}`)
+  })
 }
 
-// Add your changeCompletely() function here:
-function changeCompletely(element, index, array) {
-  array[index] = Math.floor(Math.random() * 100 + 2).toString() + ` ${array[index]}s!!!`;
+function iterate(callback) {
+  const cats = ["Garfield", "Bianca", "Petunia"]
+
+  cats.forEach(callback)
+
+  return cats
+}
+
+function doToArray(array, callback) {
+  array.forEach(callback)
 }
